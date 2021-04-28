@@ -12,7 +12,7 @@ laravel new my-app
 
 cd my-app
 
-composer require laravel/breeze --dev
+composer require lucky-media/breeze-react --dev
 
 php artisan breeze:install
 ```
