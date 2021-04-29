@@ -1,6 +1,6 @@
 {
     "name": "lucky-media/breeze-react",
-    "description": "Minimal Laravel authentication scaffolding with Blade and Tailwind.",
+    "description": "Minimal Laravel authentication scaffolding with Inertia React and Tailwind.",
     "keywords": [
         "laravel",
         "auth"
