@@ -37,6 +37,7 @@ export default function ResetPassword({ token, email }) {
                 <div className="mt-4">
                     <TextInput
                         value={data.email}
+                        error={errors.email}
                         type="text"
                         handleChange={onHandleChange}
                         label="Email"
@@ -47,6 +48,7 @@ export default function ResetPassword({ token, email }) {
                 <div className="mt-4">
                     <TextInput
                         isFocused={true}
+                        error={errors.password}
                         value={data.password}
                         type="password"
                         handleChange={onHandleChange}

@@ -38,6 +38,7 @@ export default function ConfirmPassword() {
                     <TextInput
                         isFocused={true}
                         value={data.password}
+                        error={errors.password}
                         type="password"
                         handleChange={onHandleChange}
                         label="Password"

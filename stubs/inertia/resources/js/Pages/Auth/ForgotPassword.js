@@ -37,6 +37,7 @@ export default function ForgotPassword({ status }) {
                     <form onSubmit={submit}>
                         <TextInput
                             value={data.email}
+                            error={errors.email}
                             type="text"
                             handleChange={onHandleChange}
                             isFocused={true}

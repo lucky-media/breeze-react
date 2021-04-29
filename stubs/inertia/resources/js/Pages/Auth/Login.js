@@ -45,6 +45,7 @@ export default function Login({ status, canResetPassword }) {
             <form onSubmit={submit}>
                 <TextInput
                     value={data.email}
+                    error={errors.email}
                     type="text"
                     handleChange={onHandleChange}
                     isFocused={true}
@@ -55,6 +56,7 @@ export default function Login({ status, canResetPassword }) {
                 <div className="mt-4">
                     <TextInput
                         value={data.password}
+                        error={errors.password}
                         type="password"
                         handleChange={onHandleChange}
                         label="Password"

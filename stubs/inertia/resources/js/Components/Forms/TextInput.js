@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
 
-export default function TextInput({ label, type = 'text', name, value, handleChange, autoComplete, isFocused }) {
+export default function TextInput({ label, type = 'text', name, value, error, handleChange, autoComplete, isFocused }) {
 
     const input = useRef();
 
@@ -16,13 +16,15 @@ export default function TextInput({ label, type = 'text', name, value, handleCha
             <input
                 type={type}
                 name={name}
-                className="w-full p-2 border border-gray-300 outline-none focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 rounded-md shadow-sm"
+                className={`w-full p-2 border ${error ? 'border-red-300' : 'border-gray-300'}  outline-none focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 rounded-md shadow-sm`}
                 value={value}
                 onChange={(e) => handleChange(e)}
                 ref={input}
                 autoComplete={autoComplete}
                 required
             />
+
+            {error && <p className="text-sm text-red-500 mt-1">{error}</p>}
         </div>
     );
 }

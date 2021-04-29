@@ -4,7 +4,7 @@ import { InertiaLink } from "@inertiajs/inertia-react";
 import Button from "@/Components/Forms/Button";
 import TextInput from "@/Components/Forms/TextInput";
 import Guest from "@/Layouts/Guest";
-import ValidationErros from "@/Components/Forms/ValidationErrors";
+import ValidationErrors from "@/Components/Forms/ValidationErrors";
 
 export default function Register() {
 
@@ -37,10 +37,11 @@ export default function Register() {
 
     return (
         <Guest title="Register">
-            <ValidationErros errors={errors} />
+            <ValidationErrors errors={errors} />
             <form onSubmit={submit}>
                 <TextInput
                     value={data.name}
+                    error={errors.name}
                     type="text"
                     handleChange={onHandleChange}
                     isFocused={true}
@@ -52,6 +53,7 @@ export default function Register() {
                 <div className="mt-4">
                     <TextInput
                         value={data.email}
+                        error={errors.email}
                         type="text"
                         handleChange={onHandleChange}
                         label="Email"
@@ -62,6 +64,7 @@ export default function Register() {
                 <div className="mt-4">
                     <TextInput
                         value={data.password}
+                        error={errors.password}
                         type="password"
                         handleChange={onHandleChange}
                         label="Password"
