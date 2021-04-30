@@ -23,6 +23,9 @@ After the breeze scaffolding has finished, run the following commands:
 npm install && npm run dev
 ```
 
+## Links
+Here is a short tutorial on (our blog)[https://www.luckymedia.dev/blog/laravel-breeze-with-inertia-and-react].
+
 ## Contributing
 
 Feel free to PR any idea that you think will be useful.
