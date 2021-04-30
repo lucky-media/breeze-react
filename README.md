@@ -24,7 +24,8 @@ npm install && npm run dev
 ```
 
 ## Links
-Here is a short tutorial on (our blog)[https://www.luckymedia.dev/blog/laravel-breeze-with-inertia-and-react].
+Here is a short tutorial on [our blog](https://www.luckymedia.dev/blog/laravel-breeze-with-inertia-and-react).
+
 
 ## Contributing
 
