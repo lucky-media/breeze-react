@@ -1,3 +1,5 @@
+This is now officially supported by [Laravel Breeze](https://laravel.com/docs/8.x/starter-kits#breeze-and-inertia)
+
 ## Introduction
 
 Breeze provides a minimal and simple starting point for building a Laravel application with authentication. Styled with Tailwind, Breeze publishes authentication controllers and views to your application that can be easily customized based on your own application's needs.
